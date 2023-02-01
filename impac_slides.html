@@ -337,22 +337,18 @@ Dan Ovando
 
   <p class="date">1/1/23</p>
 </section>
-<section id="leaving-the-walled-garden" class="slide level2">
-<h2>Leaving the Walled Garden</h2>
+<section id="mpas-have-complex-effects" class="slide level2 smaller">
+<h2>MPAs have Complex Effects</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<ul>
-<li><p>Protected areas asked to play a growing role in <strong>ecosystem-based management</strong></p>
-<ul>
-<li>Protect 30% of land and water in the coming decade.</li>
-</ul></li>
-<li><p>Modern protected areas first seen as refuges from the outside world</p></li>
-<li><p>Protection has wider impacts</p>
+<p>Modern protected areas first seen as refuges from the outside world</p>
+<p>Protection has wider impacts</p>
 <ul>
 <li><p>“spillover” of adult or larval organisms</p></li>
 <li><p>Displacement of human activities</p></li>
-</ul></li>
+<li><p>Across multiple species and fleets!</p></li>
 </ul>
+<p><strong>Creates a challenge for both predicting estimatin effects of spatial policies</strong></p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="imgs/IMG_1679.JPG"></p>
 </div>
@@ -388,10 +384,104 @@ Dan Ovando
 </ul></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="C:/Users/dovando/Documents/presentations/ovando_impac_2023/imgs/lester.jpg"></p>
+<p><img data-src="imgs/lester.jpg"></p>
 <p><a href="https://www.int-res.com/abstracts/meps/v384/p33-46">Lester <em>et al.</em> (2009)</a></p>
 </div>
 </div>
+</section>
+<section id="population-level-effects-of-mpas" class="slide level2">
+<h2>Population-Level Effects of MPAs</h2>
+
+<img data-src="imgs/bio_anim.gif" class="r-stretch"><aside class="notes">
+<p>Relatively sedentary adults, widely dispersed larvae with post-settlement density dependence</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="population-level-effects-of-mpas-1" class="slide level2">
+<h2>Population-Level Effects of MPAs</h2>
+
+<img data-src="imgs/fleet_anim.gif" class="r-stretch"><aside class="notes">
+<p>Relatively sedentary adults, widely dispersed larvae with post-settlement density dependence</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="case-study-channel-islands-mpas" class="slide level2">
+<h2>Case Study: Channel Islands MPAs</h2>
+
+<img data-src="imgs/ci.png" class="r-stretch"></section>
+<section id="what-happend-in-the-channel-islands" class="slide level2">
+<h2>What Happend in the Channel Islands?</h2>
+
+<img data-src="imgs/raw_targ_trend.png" data-fig.align="center" class="r-stretch"></section>
+<section id="what-happend-in-the-channel-islands-1" class="slide level2">
+<h2>What Happend in the Channel Islands?</h2>
+
+<img data-src="imgs/raw_trend.png" class="r-stretch"></section>
+<section id="estimating-population-level-effects" class="slide level2">
+<h2>Estimating Population-Level Effects</h2>
+
+<img data-src="imgs/did.001.jpeg" class="r-stretch"></section>
+<section id="estimating-population-level-effects-1" class="slide level2">
+<h2>Estimating Population-Level Effects</h2>
+
+<img data-src="imgs/did.002.jpeg" class="r-stretch"></section>
+<section id="estimating-population-level-effects-2" class="slide level2">
+<h2>Estimating Population-Level Effects</h2>
+
+<img data-src="imgs/did.003.jpeg" class="r-stretch"></section>
+<section id="estimating-population-level-effects-3" class="slide level2">
+<h2>Estimating Population-Level Effects</h2>
+<h3 id="general-form">General form</h3>
+<p><span class="math display">\[(log(D_{MPA=1, T = 1})-log(D_{MPA=0, T = 1}))-(log(D_{MPA = 1,T = 0})-log(D_{MPA =0, T = 0}))\]</span></p>
+<h3 id="bayesian-gamma-glm">Bayesian Gamma GLM</h3>
+<p><span class="math display">\[d_{i} \sim Gamma(e^{\beta_0 + \beta_1T_{i} +  \beta_2MPA_{i} + \beta_{3}T_iMPA_i + \mathbf{B^cX_i} + \mathbf{B^sS_i}},shape)\]</span></p>
+<h3 id="hierarchical-clustering-of-sites-by-island">Hierarchical clustering of sites by island</h3>
+<p><span class="math display">\[\mathbf{B^s} \sim N(\beta_r,\sigma_r)\]</span></p>
+</section>
+<section id="population-level-effects-of-mpas-2" class="slide level2">
+<h2>Population-Level Effects of MPAs</h2>
+
+<img data-src="imgs/a_priori_plot.png" class="r-stretch"></section>
+<section id="population-level-effects-of-mpas-3" class="slide level2 nostretch">
+<h2>Population-Level Effects of MPAs</h2>
+<p><img data-src="imgs/mpa_effect_plot.png" style="width:1.0%"></p>
+</section>
+<section id="effects-of-protected-areas" class="slide level2 smaller">
+<h2>Effects of Protected Areas</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li><p>Critical to consider effects <strong>inside</strong> and <strong>outside</strong></p></li>
+<li><p><strong>Population</strong> effects may be smaller and harder to find than conventionally thought</p></li>
+<li><p>Uncertainty does not preclude action</p></li>
+<li><p>Communities should have a clear understanding of full range of possible effects of protected areas</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="imgs/IMG_2947.JPG"></p>
+</div>
+</div>
+</section>
+<section id="the-catch-22-of-mpa-design" class="slide level2">
+<h2>The Catch-22 of MPA Design</h2>
+<p>The <strong>closer</strong> your control site, the more risk of spillover. The <strong>further</strong>, the less likely it is a valid environmental control</p>
 <div class="footer footer-default">
 
 </div>

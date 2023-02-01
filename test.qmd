@@ -1,7 +1,54 @@
 ---
 title: "test"
-format: revealjs
+format:
+  revealjs:
+    fig-align: center
+  html: default
+  pptx:
+    reference-doc: "template.pptx"
 ---
+
+
+## ugh
+
+
+This is some stuff
+
+. . .
+
+This is more stuff
+
+
+contents...
+
+
+## wtf
+
+```{r}
+#| out.width: 100
+#| fig-cap: "kiss my ass"
+knitr::include_graphics(file.path("imgs","boston-sleep.jpg"))
+```
+
+
+## Population-Level Effects of MPAs {.nostretch}
+
+What the hell
+
+![](imgs/mpa_effect_plot.png){width="5%"}
+
+Is going on
+
+
+## Huh
+
+![](imgs/boston-sleep.jpg){width="1%"}
+
+## Test 2
+
+![](imgs/branch.png){width="1%"}
+
+## bh
 
 ## Quarto
 
@@ -30,4 +77,5 @@ plot(1:10)
 :::
 :::
 
-
+::: notes
+:::

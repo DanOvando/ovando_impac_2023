@@ -4,16 +4,16 @@ subtitle: "IMPAC 2023"
 author: "Dan Ovando"
 date: "IMPAC 2023"
 format:
-  html: default
   revealjs:
-    default-image-extension: svg
+    fig-align: center
+    auto-stretch: true
+  html: default
   pptx:
     reference-doc: "template.pptx"
 execute: 
   eval: true
   message: false
   warning: false
-  dev: svg
 ---
 
 
@@ -21,30 +21,36 @@ execute:
 #| label: setup
 #| include: false
 library(knitr)
+
 library(tufte)
+
 library(tidyverse)
+
 library(here)
 
 
-img_path <- here('imgs')
 ```
 
-## Leaving the Walled Garden
+## MPAs have Complex Effects {.smaller}
 
 
 :::: {.columns}
 ::: {.column width="50%"}
-- Protected areas asked to play a growing role in **ecosystem-based management**
+
+Modern protected areas first seen as refuges from the outside world
   
-  - Protect 30% of land and water in the coming decade.
+Protection has wider impacts
+
+
+- "spillover" of adult or larval organisms
   
-- Modern protected areas first seen as refuges from the outside world
-  
-- Protection has wider impacts
-  
-  - "spillover" of adult or larval organisms
-  
-  - Displacement of human activities 
+- Displacement of human activities 
+
+- Across multiple species and fleets!
+
+
+**Creates a challenge for both predicting and estimating effects of spatial policies**
+
 
 :::
 
@@ -75,7 +81,7 @@ img_path <- here('imgs')
 
 - MPAs seem simple: 
   - *Less fishing, more fish*
-
+  
 - Ample evidence of **more everything** inside MPAs than outside
 
 - Problem solved?
@@ -86,16 +92,18 @@ img_path <- here('imgs')
 :::
 ::: {.column width="50%"}
 
-![](`r file.path(img_path,"lester.jpg")`)
+![](imgs/lester.jpg)
+
 
 [Lester *et al.* (2009)](https://www.int-res.com/abstracts/meps/v384/p33-46)
+
 :::
 ::::
 
 
 ## Population-Level Effects of MPAs
 
-![](`r file.path(img_path,"bio_anim.gif")`)
+![](imgs/bio_anim.gif)
 
 
 ::: notes
@@ -105,7 +113,7 @@ Relatively sedentary adults, widely dispersed larvae with post-settlement densit
 ## Population-Level Effects of MPAs
 
 
-![](`r file.path(img_path,"fleet_anim.gif")`)
+![](imgs/fleet_anim.gif)
 
 
 ::: notes
@@ -114,30 +122,26 @@ Relatively sedentary adults, widely dispersed larvae with post-settlement densit
 
 ## Case Study: Channel Islands MPAs
 
-![](`r file.path(img_path,"ci.png")`)
+![](imgs/ci.png)
 
 
 ## What Happend in the Channel Islands?
 
-Trend for species targeted by fishing... Looks promising!
-
-![](`r file.path(img_path,"raw_targ_trend.png")`)
+![](imgs/raw_targ_trend.png){fig.align="center"}
 
 
 ## What Happend in the Channel Islands?
 
-But wait... 
-
-![](`r file.path(img_path,"raw_trend.png")`)
+![](imgs/raw_trend.png)
 
 ## Estimating Population-Level Effects
 
-![](`r file.path(img_path,"did.001.jpeg")`)
+![](imgs/did.001.jpeg)
 
 
 ## Estimating Population-Level Effects
 
-![](`r file.path(img_path,"did.002.jpeg")`)
+![](imgs/did.002.jpeg)
 
 
 ---
@@ -145,7 +149,7 @@ But wait...
 
 ## Estimating Population-Level Effects
 
-![](`r file.path(img_path,"did.003.jpeg")`)
+![](imgs/did.003.jpeg)
 
 ---
 
@@ -167,45 +171,57 @@ $$\mathbf{B^s} \sim N(\beta_r,\sigma_r)$$
 
 ## Population-Level Effects of MPAs
 
-![](`r file.path(img_path,"a_priori_plot.png")`){width=20%}
 
-[Ovando *et al.* (2021)](https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13782)
-
----
+![](imgs/a_priori_plot.png)
 
 
-## Population-Level Effects of MPAs
 
-![](`r file.path(img_path,"mpa_effect_plot.png")`){width=20%}
-
-[Ovando *et al.* (2021)](https://conbio.onlinelibrary.wiley.com/doi/abs/10.1111/cobi.13782)
-
----
+## Population-Level Effects of MPAs {.nostretch}
 
 
-## Effects of Protected Areas
+![](imgs/mpa_effect_plot.png){width="1%"}
+
+## The Challenge of MPA evaluation
+
+The **closer** your control site, the more risk of spillover. 
+
+. . .
+
+The **further** your control site, the less likely it is a valid environmental control
+
+
+
+## Effects of Protected Areas {.smaller}
 
 ::: columns
-::: {.column width = "50%"}
-
-- Protected areas can support ecosystem-based management
+::: {.column width="50%"}
 
 - Critical to consider effects **inside** and **outside**
 
 -  **Population** effects may be smaller and harder to find than conventionally thought
 
-- Does not mean there are not benefits
-  - But may impede adaptive management
-  
-- Communities should have a clear understanding of expected effects of protected areas
+- Uncertainty does not preclude action
+
+- Communities should have a clear understanding of full range of possible effects of protected areas
+
 :::
-::: {.column width="50%}
+::: {.column width="50%"}
 ![](imgs/IMG_2947.JPG)
 :::
 :::
 
 
-## The Catch-22 of MPA Design
 
-The **closer** your control site, the more risk of spillover. The **further**, the less likely it is a valid environmental control
+# Extras
+
+## Inside vs. Outside = Effect?
+
+
+![](imgs/rr1.jpg)
+
+
+## Inside vs. Outside = Effect?
+
+
+![](https://raw.githubusercontent.com/DanOvando/weird-fishes/master/static/blog/2021-07-06-pop-effects-of-mpas_files/biased_dr_plot.jpg)
 
